@@ -1,0 +1,1590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rUW-9n-IAG">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Calculator-->
+        <scene sceneID="lH0-Il-9oj">
+            <objects>
+                <viewController id="1fu-lc-bmU" customClass="CryptoCalculatorViewController" customModule="Immediate_360" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gaJ-9z-OUf">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZlC-RB-rze">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="186.33333333333334"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSD-fV-AXs">
+                                        <rect key="frame" x="71.333333333333343" y="74.333333333333329" width="287.33333333333326" height="77.999999999999986"/>
+                                        <string key="text">Calculate 
+cryptocurrency value </string>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.1450980392" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="tSD-fV-AXs" firstAttribute="centerY" secondItem="ZlC-RB-rze" secondAttribute="centerY" constant="20" id="dlG-Kg-kao"/>
+                                    <constraint firstItem="tSD-fV-AXs" firstAttribute="centerX" secondItem="ZlC-RB-rze" secondAttribute="centerX" id="omI-n1-N5R"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uLQ-UJ-ojL">
+                                <rect key="frame" x="20" y="206.33333333333334" width="390" height="76.000000000000028"/>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.1450980392" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="IvT-Wa-g6C"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zqH-PN-zYD">
+                                <rect key="frame" x="20" y="302.33333333333331" width="390" height="76"/>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.1450980392" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="d75-OE-M14"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L1c-uQ-n16">
+                                <rect key="frame" x="30" y="326.66666666666669" width="258" height="27.666666666666686"/>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.1450980392" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fDx-UG-wWu">
+                                <rect key="frame" x="308" y="312.33333333333331" width="92" height="56"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FB2-5N-J0k">
+                                        <rect key="frame" x="10" y="12" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="NeW-ab-Tdg"/>
+                                            <constraint firstAttribute="width" constant="32" id="hnA-Eq-TCj"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUl-AF-k2W">
+                                        <rect key="frame" x="52" y="17.666666666666686" width="28" height="21"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1647058824" green="0.17254901959999999" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="BUl-AF-k2W" firstAttribute="centerX" secondItem="fDx-UG-wWu" secondAttribute="centerX" constant="20" id="7ka-7i-Eby"/>
+                                    <constraint firstAttribute="width" constant="92" id="CUc-zI-Z0L"/>
+                                    <constraint firstItem="BUl-AF-k2W" firstAttribute="centerY" secondItem="fDx-UG-wWu" secondAttribute="centerY" id="DTs-J8-c4M"/>
+                                    <constraint firstAttribute="height" constant="56" id="eq2-Kb-5ct"/>
+                                    <constraint firstItem="FB2-5N-J0k" firstAttribute="centerY" secondItem="fDx-UG-wWu" secondAttribute="centerY" id="t1K-aF-ljW"/>
+                                    <constraint firstItem="FB2-5N-J0k" firstAttribute="centerX" secondItem="fDx-UG-wWu" secondAttribute="centerX" constant="-20" id="yze-Jg-l2y"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RaH-f1-X6U">
+                                <rect key="frame" x="308" y="216.33333333333334" width="92" height="56.000000000000028"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3zn-9E-yOD">
+                                        <rect key="frame" x="10" y="12" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="Aej-hZ-FCf"/>
+                                            <constraint firstAttribute="width" constant="32" id="BjT-js-O7Y"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZ3-cA-xfK">
+                                        <rect key="frame" x="52" y="17.666666666666657" width="28" height="21"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.16470588235294117" green="0.17254901960784313" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="2a0-6F-ffc"/>
+                                    <constraint firstAttribute="width" constant="92" id="DRt-fa-naV"/>
+                                    <constraint firstItem="3zn-9E-yOD" firstAttribute="centerY" secondItem="RaH-f1-X6U" secondAttribute="centerY" id="HWA-ha-XKS"/>
+                                    <constraint firstItem="uZ3-cA-xfK" firstAttribute="centerX" secondItem="RaH-f1-X6U" secondAttribute="centerX" constant="20" id="JTT-4W-dLt"/>
+                                    <constraint firstItem="3zn-9E-yOD" firstAttribute="centerX" secondItem="RaH-f1-X6U" secondAttribute="centerX" constant="-20" id="PiG-8d-ylU"/>
+                                    <constraint firstItem="uZ3-cA-xfK" firstAttribute="centerY" secondItem="RaH-f1-X6U" secondAttribute="centerY" id="Y9j-XF-OTS"/>
+                                </constraints>
+                            </view>
+                            <textField autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Ps-4u-pZb">
+                                <rect key="frame" x="30" y="230.66666666666666" width="258" height="27.666666666666657"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Knq-SZ-Tyc"/>
+                        <color key="backgroundColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="4Ps-4u-pZb" firstAttribute="centerY" secondItem="uLQ-UJ-ojL" secondAttribute="centerY" id="2Ok-NN-KbH"/>
+                            <constraint firstItem="ZlC-RB-rze" firstAttribute="leading" secondItem="gaJ-9z-OUf" secondAttribute="leading" id="3Dm-40-EAQ"/>
+                            <constraint firstItem="ZlC-RB-rze" firstAttribute="top" secondItem="gaJ-9z-OUf" secondAttribute="top" id="77Y-d5-hGM"/>
+                            <constraint firstItem="uLQ-UJ-ojL" firstAttribute="leading" secondItem="Knq-SZ-Tyc" secondAttribute="leading" constant="20" id="7gA-qp-mga"/>
+                            <constraint firstItem="4Ps-4u-pZb" firstAttribute="trailing" secondItem="RaH-f1-X6U" secondAttribute="trailing" constant="-112" id="7q8-t6-XiU"/>
+                            <constraint firstItem="ZlC-RB-rze" firstAttribute="trailing" secondItem="gaJ-9z-OUf" secondAttribute="trailing" id="8Jn-GY-5X8"/>
+                            <constraint firstItem="Knq-SZ-Tyc" firstAttribute="trailing" secondItem="zqH-PN-zYD" secondAttribute="trailing" constant="20" id="9sh-RL-GdZ"/>
+                            <constraint firstItem="zqH-PN-zYD" firstAttribute="leading" secondItem="Knq-SZ-Tyc" secondAttribute="leading" constant="20" id="BAo-jq-ky1"/>
+                            <constraint firstItem="L1c-uQ-n16" firstAttribute="leading" secondItem="zqH-PN-zYD" secondAttribute="leading" constant="10" id="Dof-Ya-0m9"/>
+                            <constraint firstItem="ZlC-RB-rze" firstAttribute="height" secondItem="gaJ-9z-OUf" secondAttribute="height" multiplier="0.2" id="E9b-fF-liG"/>
+                            <constraint firstItem="RaH-f1-X6U" firstAttribute="centerY" secondItem="uLQ-UJ-ojL" secondAttribute="centerY" id="G1A-Cv-t3J"/>
+                            <constraint firstItem="L1c-uQ-n16" firstAttribute="trailing" secondItem="fDx-UG-wWu" secondAttribute="trailing" constant="-112" id="KGJ-XO-cHE"/>
+                            <constraint firstItem="uLQ-UJ-ojL" firstAttribute="top" secondItem="ZlC-RB-rze" secondAttribute="bottom" constant="20" id="Ll2-kd-K8f"/>
+                            <constraint firstItem="RaH-f1-X6U" firstAttribute="trailing" secondItem="uLQ-UJ-ojL" secondAttribute="trailing" constant="-10" id="Qgs-a2-vUn"/>
+                            <constraint firstItem="L1c-uQ-n16" firstAttribute="centerY" secondItem="zqH-PN-zYD" secondAttribute="centerY" id="S7G-ef-zid"/>
+                            <constraint firstItem="zqH-PN-zYD" firstAttribute="top" secondItem="uLQ-UJ-ojL" secondAttribute="bottom" constant="20" id="b5T-2k-7GQ"/>
+                            <constraint firstItem="Knq-SZ-Tyc" firstAttribute="trailing" secondItem="uLQ-UJ-ojL" secondAttribute="trailing" constant="20" id="ewq-el-ElG"/>
+                            <constraint firstItem="fDx-UG-wWu" firstAttribute="trailing" secondItem="zqH-PN-zYD" secondAttribute="trailing" constant="-10" id="f0M-no-bl3"/>
+                            <constraint firstItem="4Ps-4u-pZb" firstAttribute="leading" secondItem="uLQ-UJ-ojL" secondAttribute="leading" constant="10" id="iB8-Mb-nf3"/>
+                            <constraint firstItem="fDx-UG-wWu" firstAttribute="centerY" secondItem="zqH-PN-zYD" secondAttribute="centerY" id="qN3-sI-O9r"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Calculator" image="ic_calculate" id="Hfi-ej-rTh"/>
+                    <connections>
+                        <outlet property="imgCurrency" destination="3zn-9E-yOD" id="eHI-hd-eRK"/>
+                        <outlet property="imgValue" destination="FB2-5N-J0k" id="4N9-73-5Ua"/>
+                        <outlet property="labelCurrency" destination="uZ3-cA-xfK" id="prH-ek-TVC"/>
+                        <outlet property="labelValue" destination="BUl-AF-k2W" id="Cnq-LX-2Xx"/>
+                        <outlet property="textFieldCurrency" destination="4Ps-4u-pZb" id="FNy-Cv-2SI"/>
+                        <outlet property="textFieldValue" destination="L1c-uQ-n16" id="DkT-OX-bnI"/>
+                        <outlet property="viewCurrency" destination="RaH-f1-X6U" id="68U-RY-uQZ"/>
+                        <outlet property="viewTextField1" destination="uLQ-UJ-ojL" id="1R5-AU-5ox"/>
+                        <outlet property="viewTextField2" destination="zqH-PN-zYD" id="Cus-pM-gfl"/>
+                        <outlet property="viewTop" destination="ZlC-RB-rze" id="apq-DF-Sah"/>
+                        <outlet property="viewValue" destination="fDx-UG-wWu" id="iO9-Ii-W5m"/>
+                        <segue destination="rKW-us-HXm" kind="show" identifier="ShowChooseCurrency" id="ByD-4D-Kll"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xDE-rr-kHd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-747" y="9"/>
+        </scene>
+        <!--Choose Currency View Controller-->
+        <scene sceneID="ndo-bj-NOx">
+            <objects>
+                <viewController id="rKW-us-HXm" customClass="ChooseCurrencyViewController" customModule="Immediate_360" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z4p-fU-nYY">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gZK-06-qs4">
+                                <rect key="frame" x="20" y="20" width="390" height="48"/>
+                                <color key="backgroundColor" red="0.1647058824" green="0.17254901959999999" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="LUb-lc-eyK"/>
+                                </constraints>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet" keyboardAppearance="alert" returnKeyType="search"/>
+                                <connections>
+                                    <outlet property="delegate" destination="rKW-us-HXm" id="9G9-iu-vRe"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2h-pV-FqB">
+                                <rect key="frame" x="225.66666666666663" y="88" width="189.33333333333337" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="xaf-sr-db6"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Fiat currencies">
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clearData" destination="kim-6W-4cl" eventType="touchUpInside" id="p0a-Cv-Rub"/>
+                                    <action selector="click" destination="rKW-us-HXm" eventType="touchUpInside" id="jqw-qu-YdY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REQ-wJ-jP0">
+                                <rect key="frame" x="15" y="88" width="189.33333333333334" height="48"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="3cc-BU-RuZ"/>
+                                </constraints>
+                                <color key="tintColor" red="0.13725490200000001" green="0.1450980392" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Crypto currencies">
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clearData" destination="kim-6W-4cl" eventType="touchUpInside" id="gzQ-I6-MWf"/>
+                                    <action selector="click" destination="rKW-us-HXm" eventType="touchUpInside" id="dR7-59-RED"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="tableView" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="74" estimatedRowHeight="-1" sectionHeaderHeight="1" estimatedSectionHeaderHeight="1" sectionFooterHeight="1" estimatedSectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Vum-Sx-vsq">
+                                <rect key="frame" x="20" y="156" width="390" height="746"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CryptoCell" rowHeight="74" id="YYT-4h-DYG" customClass="CryptoTableViewCell" customModule="Immediate_360" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="74"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YYT-4h-DYG" id="haA-Iv-YiE">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="74"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rgp-gm-SRH">
+                                                    <rect key="frame" x="0.0" y="5" width="390" height="64"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bitcoin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkU-4k-QnR">
+                                                            <rect key="frame" x="56" y="33" width="42" height="18.333333333333329"/>
+                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                                            <color key="textColor" red="0.46274509803921571" green="0.46274509803921571" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hki-VD-PVT">
+                                                            <rect key="frame" x="10" y="14" width="36" height="36"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="36" id="Vbj-aK-8fu"/>
+                                                                <constraint firstAttribute="width" constant="36" id="jRT-Fj-hRV"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Po5-oH-Y4U">
+                                                            <rect key="frame" x="56" y="10.333333333333334" width="34" height="23.666666666666664"/>
+                                                            <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.13725490200000001" green="0.1450980392" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="nkU-4k-QnR" firstAttribute="centerY" secondItem="Rgp-gm-SRH" secondAttribute="centerY" constant="10" id="A6P-u6-d10"/>
+                                                        <constraint firstItem="Po5-oH-Y4U" firstAttribute="centerY" secondItem="Rgp-gm-SRH" secondAttribute="centerY" constant="-10" id="L3q-GG-GVR"/>
+                                                        <constraint firstItem="Hki-VD-PVT" firstAttribute="centerY" secondItem="Rgp-gm-SRH" secondAttribute="centerY" id="fJt-gY-JzM"/>
+                                                        <constraint firstItem="Hki-VD-PVT" firstAttribute="leading" secondItem="Rgp-gm-SRH" secondAttribute="leading" constant="10" id="vfv-2o-LiH"/>
+                                                        <constraint firstItem="nkU-4k-QnR" firstAttribute="leading" secondItem="Hki-VD-PVT" secondAttribute="trailing" constant="10" id="wYq-sE-WEB"/>
+                                                        <constraint firstItem="Po5-oH-Y4U" firstAttribute="leading" secondItem="Hki-VD-PVT" secondAttribute="trailing" constant="10" id="ywz-GK-NbN"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="Rgp-gm-SRH" firstAttribute="leading" secondItem="haA-Iv-YiE" secondAttribute="leading" id="KBS-bc-0ep"/>
+                                                <constraint firstItem="Rgp-gm-SRH" firstAttribute="top" secondItem="haA-Iv-YiE" secondAttribute="top" constant="5" id="SA2-go-Aqo"/>
+                                                <constraint firstAttribute="bottom" secondItem="Rgp-gm-SRH" secondAttribute="bottom" constant="5" id="s04-Vl-xTz"/>
+                                                <constraint firstAttribute="trailing" secondItem="Rgp-gm-SRH" secondAttribute="trailing" id="waZ-J1-KF6"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="contentMyView" destination="Rgp-gm-SRH" id="htI-1M-oFq"/>
+                                            <outlet property="iconImageView" destination="Hki-VD-PVT" id="nL6-WX-AnL"/>
+                                            <outlet property="nameLabel" destination="nkU-4k-QnR" id="J6v-Ag-vad"/>
+                                            <outlet property="symbolLabel" destination="Po5-oH-Y4U" id="V6Z-OI-E1S"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="rKW-us-HXm" id="BYU-yj-CM0"/>
+                                    <outlet property="delegate" destination="rKW-us-HXm" id="6On-xZ-zkR"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="F9h-7V-6bl"/>
+                        <color key="backgroundColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Vum-Sx-vsq" secondAttribute="bottom" constant="20" id="5cM-PM-bXS"/>
+                            <constraint firstItem="REQ-wJ-jP0" firstAttribute="width" secondItem="Z4p-fU-nYY" secondAttribute="width" multiplier="0.44" id="FHi-JT-rdW"/>
+                            <constraint firstItem="Vum-Sx-vsq" firstAttribute="leading" secondItem="F9h-7V-6bl" secondAttribute="leading" constant="20" id="HpG-MX-mUf"/>
+                            <constraint firstItem="F9h-7V-6bl" firstAttribute="trailing" secondItem="Vum-Sx-vsq" secondAttribute="trailing" constant="20" id="IIl-JL-1AJ"/>
+                            <constraint firstItem="gZK-06-qs4" firstAttribute="top" secondItem="F9h-7V-6bl" secondAttribute="top" constant="20" id="JNH-Ho-4Fj"/>
+                            <constraint firstItem="y2h-pV-FqB" firstAttribute="top" secondItem="gZK-06-qs4" secondAttribute="bottom" constant="20" id="P58-OV-5ue"/>
+                            <constraint firstItem="F9h-7V-6bl" firstAttribute="trailing" secondItem="gZK-06-qs4" secondAttribute="trailing" constant="20" id="V2P-MU-T5b"/>
+                            <constraint firstItem="F9h-7V-6bl" firstAttribute="trailing" secondItem="y2h-pV-FqB" secondAttribute="trailing" constant="15" id="YyV-cf-2dd"/>
+                            <constraint firstItem="Vum-Sx-vsq" firstAttribute="top" secondItem="REQ-wJ-jP0" secondAttribute="bottom" constant="20" id="bVU-bL-U5E"/>
+                            <constraint firstItem="y2h-pV-FqB" firstAttribute="width" secondItem="Z4p-fU-nYY" secondAttribute="width" multiplier="0.44" id="bmX-ti-rgV"/>
+                            <constraint firstItem="gZK-06-qs4" firstAttribute="leading" secondItem="F9h-7V-6bl" secondAttribute="leading" constant="20" id="ewz-b3-JrW"/>
+                            <constraint firstItem="REQ-wJ-jP0" firstAttribute="leading" secondItem="F9h-7V-6bl" secondAttribute="leading" constant="15" id="mtS-7l-zCg"/>
+                            <constraint firstItem="REQ-wJ-jP0" firstAttribute="top" secondItem="gZK-06-qs4" secondAttribute="bottom" constant="20" id="sIC-uo-FVt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xGK-Jp-38f"/>
+                    <connections>
+                        <outlet property="bttnCrypto" destination="REQ-wJ-jP0" id="byL-T6-X4V"/>
+                        <outlet property="bttnFiat" destination="y2h-pV-FqB" id="oH4-yR-6LW"/>
+                        <outlet property="tableView" destination="Vum-Sx-vsq" id="Fxi-k7-F84"/>
+                        <outlet property="textFieldSeacrch" destination="gZK-06-qs4" id="SHx-i4-Tyb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jos-76-4gQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.930232558139533" y="7.7253218884120178"/>
+        </scene>
+        <!--Futures-->
+        <scene sceneID="ToR-O5-azN">
+            <objects>
+                <viewController id="kim-6W-4cl" customClass="FuturesViewController" customModule="Immediate_360" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MsX-44-I6m">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9wg-NT-ACH">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="186.33333333333334"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uSu-LI-Z9s">
+                                        <rect key="frame" x="104.66666666666667" y="74.333333333333329" width="220.66666666666663" height="77.999999999999986"/>
+                                        <string key="text">Calculate 
+investment profit </string>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.13725490196078433" green="0.14509803921568626" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="uSu-LI-Z9s" firstAttribute="centerY" secondItem="9wg-NT-ACH" secondAttribute="centerY" constant="20" id="18c-dH-YZR"/>
+                                    <constraint firstItem="uSu-LI-Z9s" firstAttribute="centerX" secondItem="9wg-NT-ACH" secondAttribute="centerX" id="pmR-eJ-R5V"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="act-hc-eFL">
+                                <rect key="frame" x="20" y="206.33333333333334" width="390" height="76.000000000000028"/>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.1450980392" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="ymK-PY-QtX"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jFb-US-wjh">
+                                <rect key="frame" x="20" y="302.33333333333331" width="390" height="76"/>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.1450980392" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="Rz7-FO-tj7"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KUx-Sj-zYR">
+                                <rect key="frame" x="20" y="398.33333333333331" width="390" height="76"/>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.1450980392" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="Uc4-0W-BGM"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your profit:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Azo-aX-60j">
+                                <rect key="frame" x="20.000000000000007" y="504.33333333333326" width="101.66666666666669" height="26"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+$139.32" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Afh-H9-tmw">
+                                <rect key="frame" x="20" y="540.33333333333337" width="273.66666666666669" height="78"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Final amount: $2139.32" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gb1-gU-fWu">
+                                <rect key="frame" x="20" y="638.33333333333337" width="219" height="26"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kg8-i4-Ppn">
+                                <rect key="frame" x="20" y="684.33333333333337" width="390" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="30Y-zD-eKR"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Clear data">
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clearData" destination="kim-6W-4cl" eventType="touchUpInside" id="scZ-i2-hCD"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H3W-lN-Xkk">
+                                <rect key="frame" x="308" y="216.33333333333334" width="92" height="56.000000000000028"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qeA-1R-WWL">
+                                        <rect key="frame" x="10" y="12" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="4Oa-tM-MDK"/>
+                                            <constraint firstAttribute="height" constant="32" id="VQR-2e-PTf"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKw-zr-Xt8">
+                                        <rect key="frame" x="52" y="17.666666666666657" width="28" height="21"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1647058824" green="0.17254901959999999" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="uKw-zr-Xt8" firstAttribute="centerX" secondItem="H3W-lN-Xkk" secondAttribute="centerX" constant="20" id="AbD-aM-Jur"/>
+                                    <constraint firstAttribute="height" constant="56" id="CUY-vm-njd"/>
+                                    <constraint firstItem="qeA-1R-WWL" firstAttribute="centerX" secondItem="H3W-lN-Xkk" secondAttribute="centerX" constant="-20" id="QeK-5c-tCW"/>
+                                    <constraint firstItem="qeA-1R-WWL" firstAttribute="centerY" secondItem="H3W-lN-Xkk" secondAttribute="centerY" id="Y03-fm-zgZ"/>
+                                    <constraint firstItem="uKw-zr-Xt8" firstAttribute="centerY" secondItem="H3W-lN-Xkk" secondAttribute="centerY" id="Y6T-9y-8QP"/>
+                                    <constraint firstAttribute="width" constant="92" id="fI0-7f-poe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="86f-Or-Rbm"/>
+                        <color key="backgroundColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9wg-NT-ACH" secondAttribute="trailing" id="1IG-AF-SHE"/>
+                            <constraint firstItem="act-hc-eFL" firstAttribute="top" secondItem="9wg-NT-ACH" secondAttribute="bottom" constant="20" id="5zl-L2-rG3"/>
+                            <constraint firstItem="9wg-NT-ACH" firstAttribute="height" secondItem="MsX-44-I6m" secondAttribute="height" multiplier="0.2" id="6Kz-oO-PEp"/>
+                            <constraint firstAttribute="trailing" secondItem="jFb-US-wjh" secondAttribute="trailing" constant="20" id="AiU-yJ-ds3"/>
+                            <constraint firstItem="Afh-H9-tmw" firstAttribute="leading" secondItem="MsX-44-I6m" secondAttribute="leading" constant="20" id="C3Y-VA-O1l"/>
+                            <constraint firstItem="H3W-lN-Xkk" firstAttribute="trailing" secondItem="act-hc-eFL" secondAttribute="trailing" constant="-10" id="DJO-M4-dL9"/>
+                            <constraint firstItem="Afh-H9-tmw" firstAttribute="top" secondItem="Azo-aX-60j" secondAttribute="bottom" constant="10" id="DU8-CU-xau"/>
+                            <constraint firstAttribute="trailing" secondItem="Kg8-i4-Ppn" secondAttribute="trailing" constant="20" id="H5a-ts-SVQ"/>
+                            <constraint firstItem="Azo-aX-60j" firstAttribute="leading" secondItem="MsX-44-I6m" secondAttribute="leading" constant="20" id="Nte-fJ-4tz"/>
+                            <constraint firstItem="Kg8-i4-Ppn" firstAttribute="leading" secondItem="MsX-44-I6m" secondAttribute="leading" constant="20" id="OTm-ql-kbL"/>
+                            <constraint firstItem="uKw-zr-Xt8" firstAttribute="centerY" secondItem="act-hc-eFL" secondAttribute="centerY" id="bcq-Lk-Nfa"/>
+                            <constraint firstItem="jFb-US-wjh" firstAttribute="leading" secondItem="MsX-44-I6m" secondAttribute="leading" constant="20" id="bq8-HR-4mz"/>
+                            <constraint firstItem="KUx-Sj-zYR" firstAttribute="leading" secondItem="MsX-44-I6m" secondAttribute="leading" constant="20" id="dGB-PF-njK"/>
+                            <constraint firstItem="act-hc-eFL" firstAttribute="leading" secondItem="86f-Or-Rbm" secondAttribute="leading" constant="20" id="dcO-e6-gGd"/>
+                            <constraint firstItem="Azo-aX-60j" firstAttribute="top" secondItem="KUx-Sj-zYR" secondAttribute="bottom" constant="30" id="fZ6-k1-3Ce"/>
+                            <constraint firstItem="gb1-gU-fWu" firstAttribute="leading" secondItem="MsX-44-I6m" secondAttribute="leading" constant="20" id="fq4-Ma-CVo"/>
+                            <constraint firstItem="KUx-Sj-zYR" firstAttribute="top" secondItem="jFb-US-wjh" secondAttribute="bottom" constant="20" id="gA7-F1-68A"/>
+                            <constraint firstItem="gb1-gU-fWu" firstAttribute="top" secondItem="Afh-H9-tmw" secondAttribute="bottom" constant="20" id="jmd-Bq-AeW"/>
+                            <constraint firstItem="Kg8-i4-Ppn" firstAttribute="top" secondItem="gb1-gU-fWu" secondAttribute="bottom" constant="20" id="jqq-Iz-eIq"/>
+                            <constraint firstItem="jFb-US-wjh" firstAttribute="top" secondItem="act-hc-eFL" secondAttribute="bottom" constant="20" id="nEl-YZ-2DT"/>
+                            <constraint firstItem="86f-Or-Rbm" firstAttribute="trailing" secondItem="act-hc-eFL" secondAttribute="trailing" constant="20" id="oPP-6D-PnC"/>
+                            <constraint firstAttribute="trailing" secondItem="KUx-Sj-zYR" secondAttribute="trailing" constant="20" id="oQ8-eV-xbP"/>
+                            <constraint firstItem="9wg-NT-ACH" firstAttribute="top" secondItem="MsX-44-I6m" secondAttribute="top" id="sct-lg-nve"/>
+                            <constraint firstItem="9wg-NT-ACH" firstAttribute="leading" secondItem="MsX-44-I6m" secondAttribute="leading" id="yaB-V4-5bd"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Futures" image="ic_futures" id="0qg-6l-Jbl">
+                        <color key="badgeColor" red="0.59215686270000001" green="0.88235294119999996" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="bttnClearData" destination="Kg8-i4-Ppn" id="St4-zc-P5d"/>
+                        <outlet property="chooseCryptoCurrency" destination="act-hc-eFL" id="BpV-tO-SoA"/>
+                        <outlet property="enterInvestment" destination="jFb-US-wjh" id="CKf-RX-Zik"/>
+                        <outlet property="enterSellingPrice" destination="KUx-Sj-zYR" id="oxN-oj-Ver"/>
+                        <outlet property="imgCurrency" destination="qeA-1R-WWL" id="HnN-aL-A0e"/>
+                        <outlet property="labelCurrency" destination="uKw-zr-Xt8" id="1D2-0T-VcL"/>
+                        <outlet property="lblFinalAmount" destination="gb1-gU-fWu" id="qZ4-x4-8dy"/>
+                        <outlet property="lblProfit" destination="Azo-aX-60j" id="uBt-yZ-igE"/>
+                        <outlet property="lblSumProfit" destination="Afh-H9-tmw" id="WjL-2O-tBI"/>
+                        <outlet property="viewCurrency" destination="H3W-lN-Xkk" id="MDw-FX-OIm"/>
+                        <outlet property="viewTop" destination="9wg-NT-ACH" id="Mut-D0-Ya0"/>
+                        <segue destination="03x-wZ-VYD" kind="show" identifier="ShowCryptoFutures" id="5t6-S9-eUb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pZE-1k-Szg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-747.32824427480909" y="-720.42253521126759"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="8fr-aY-62u">
+            <objects>
+                <tabBarController id="rUW-9n-IAG" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pzz-OL-8wx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.59215686270000001" green="0.88235294119999996" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.59215686270000001" green="0.88235294119999996" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.59215686270000001" green="0.88235294119999996" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <tabBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" red="0.59215686270000001" green="0.88235294119999996" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="shadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="selectionIndicatorTintColor" red="0.59215686270000001" green="0.88235294119999996" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                        </tabBarAppearance>
+                    </tabBar>
+                    <connections>
+                        <segue destination="kim-6W-4cl" kind="relationship" relationship="viewControllers" id="H98-Gk-BPQ"/>
+                        <segue destination="1fu-lc-bmU" kind="relationship" relationship="viewControllers" id="bQ9-a8-Lcl"/>
+                        <segue destination="m3u-rU-8uy" kind="relationship" relationship="viewControllers" id="vp5-2x-22R"/>
+                        <segue destination="WWb-EH-L9c" kind="relationship" relationship="viewControllers" id="jhZ-dw-l2X"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fM7-e2-6Bk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2381" y="-237"/>
+        </scene>
+        <!--Terms View Controller-->
+        <scene sceneID="fA2-r3-Fxz">
+            <objects>
+                <viewController storyboardIdentifier="TermsVC" id="7Jq-FB-2RZ" customClass="TermsViewController" customModule="Immediate_360" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4w9-uy-u6W">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfK-d9-fhq">
+                                <rect key="frame" x="20" y="79" width="101" height="36"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="101" id="9ZI-no-ZeP"/>
+                                    <constraint firstAttribute="height" constant="36" id="VwD-9x-K1V"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevrone right" title="Back" imagePadding="0.0">
+                                    <backgroundConfiguration key="background" cornerRadius="30">
+                                        <color key="backgroundColor" red="0.59215686270000001" green="0.88235294119999996" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goBackTerms:" destination="7Jq-FB-2RZ" eventType="touchUpInside" id="uf8-H2-Mnn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms of use" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mkk-Pk-4JE">
+                                <rect key="frame" x="20" y="145" width="201.33333333333334" height="39"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbF-LA-nPF">
+                                <rect key="frame" x="20" y="204" width="390" height="674"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">By downloading and using Immediate 360, you agree to the following terms:
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Usage:">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Immediate 360 is intended for informational and educational purposes only. Users are solely responsible for their actions and decisions based on the information provided by the app.
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Accuracy of Information:">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+While we strive to provide accurate and up-to-date information, we cannot guarantee the accuracy, completeness, or reliability of the content within Immediate 360. Users should verify any information before making decisions.
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Financial Advice:">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Immediate 360 does not provide financial, investment, or trading advice. Users should consult with a qualified financial advisor or professional before making any financial decisions.
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Data Privacy:">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+We respect your privacy and are committed to protecting your personal information. Please review our Privacy Policy to understand how we collect, use, and safeguard your data.
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Acceptable Use: ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Users must not misuse Immediate 360, including but not limited to unauthorized access, tampering with the app's functionality, or engaging in any illegal activities.
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Feedback:">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+We welcome feedback and suggestions to improve Immediate 360. Users can provide feedback through the app or contact us directly via [contact information].
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Changes to Terms:">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+We reserve the right to update or modify these terms of use at any time. Users will be notified of any changes, and continued use of the app constitutes acceptance of the revised terms.
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Termination:">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+We reserve the right to terminate or suspend access to Immediate 360 at our discretion, without prior notice or liability, for any reason, including but not limited to violation of these terms of use.
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Governing Law:">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+These terms of use shall be governed by and construed in accordance with the laws of your country, without regard to its conflict of law provisions.
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Governing Law:">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+These terms of use shall be governed by and construed in accordance with the laws of your country, without regard to its conflict of law provisions.
+
+By using Immediate 360, you acknowledge that you have read, understood, and agree to abide by these terms of use.
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Last updated: 18.03.2024">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="X7j-uf-NMy"/>
+                        <color key="backgroundColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="X7j-uf-NMy" firstAttribute="bottom" secondItem="cbF-LA-nPF" secondAttribute="bottom" constant="20" id="6GF-2k-Ij8"/>
+                            <constraint firstItem="cbF-LA-nPF" firstAttribute="leading" secondItem="X7j-uf-NMy" secondAttribute="leading" constant="20" id="Iat-8U-9GB"/>
+                            <constraint firstItem="cbF-LA-nPF" firstAttribute="top" secondItem="Mkk-Pk-4JE" secondAttribute="bottom" constant="20" id="M7J-1X-Jgv"/>
+                            <constraint firstItem="lfK-d9-fhq" firstAttribute="leading" secondItem="X7j-uf-NMy" secondAttribute="leading" constant="20" id="QVD-9E-8aT"/>
+                            <constraint firstItem="Mkk-Pk-4JE" firstAttribute="top" secondItem="lfK-d9-fhq" secondAttribute="bottom" constant="30" id="gBw-N2-FzZ"/>
+                            <constraint firstItem="lfK-d9-fhq" firstAttribute="top" secondItem="X7j-uf-NMy" secondAttribute="top" constant="20" id="nKk-FC-Eko"/>
+                            <constraint firstItem="Mkk-Pk-4JE" firstAttribute="leading" secondItem="X7j-uf-NMy" secondAttribute="leading" constant="20" id="qHc-aM-zyH"/>
+                            <constraint firstItem="X7j-uf-NMy" firstAttribute="trailing" secondItem="cbF-LA-nPF" secondAttribute="trailing" constant="20" id="uUg-ca-S9W"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MjX-8D-sDf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Skm-ab-dvG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3135" y="1302"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="NOx-b4-QNf">
+            <objects>
+                <viewController id="WWb-EH-L9c" customClass="SettingsViewController" customModule="Immediate_360" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rCO-sn-WOG">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mCY-Hq-AtU">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="186.33333333333334"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16h-fv-25i">
+                                        <rect key="frame" x="169.66666666666666" y="96.333333333333329" width="90.999999999999972" height="33.999999999999986"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="26"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.1450980392" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="16h-fv-25i" firstAttribute="centerY" secondItem="mCY-Hq-AtU" secondAttribute="centerY" constant="20" id="1sh-if-EIU"/>
+                                    <constraint firstItem="16h-fv-25i" firstAttribute="centerX" secondItem="mCY-Hq-AtU" secondAttribute="centerX" id="fBd-IB-eCN"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJZ-FJ-ERt">
+                                <rect key="frame" x="20" y="216.33333333333334" width="390" height="64.000000000000028"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_privacy" translatesAutoresizingMaskIntoConstraints="NO" id="gIz-cE-jtK">
+                                        <rect key="frame" x="20" y="20" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="Ile-86-d4L"/>
+                                            <constraint firstAttribute="height" constant="24" id="fGC-da-dmZ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrv-jd-8WF">
+                                        <rect key="frame" x="54.000000000000007" y="19" width="65.666666666666686" height="26"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevrone left" translatesAutoresizingMaskIntoConstraints="NO" id="cLZ-iT-WKT">
+                                        <rect key="frame" x="346" y="20" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="6V2-O0-fMp"/>
+                                            <constraint firstAttribute="width" constant="24" id="kYf-It-8IX"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.1450980392" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="gIz-cE-jtK" firstAttribute="centerY" secondItem="cJZ-FJ-ERt" secondAttribute="centerY" id="7ym-KL-8fk"/>
+                                    <constraint firstAttribute="trailing" secondItem="cLZ-iT-WKT" secondAttribute="trailing" constant="20" id="HOn-yG-CrD"/>
+                                    <constraint firstItem="cLZ-iT-WKT" firstAttribute="centerY" secondItem="cJZ-FJ-ERt" secondAttribute="centerY" id="IEf-Fk-BxC"/>
+                                    <constraint firstItem="wrv-jd-8WF" firstAttribute="leading" secondItem="gIz-cE-jtK" secondAttribute="trailing" constant="10" id="Rrz-Nq-pwM"/>
+                                    <constraint firstItem="wrv-jd-8WF" firstAttribute="centerY" secondItem="cJZ-FJ-ERt" secondAttribute="centerY" id="VKL-H9-Fdm"/>
+                                    <constraint firstItem="gIz-cE-jtK" firstAttribute="leading" secondItem="cJZ-FJ-ERt" secondAttribute="leading" constant="20" id="fvD-Tv-8Ia"/>
+                                    <constraint firstAttribute="height" constant="64" id="uDP-mF-PHr"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I31-HM-JN1">
+                                <rect key="frame" x="20" y="300.33333333333331" width="390" height="64"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_terms" translatesAutoresizingMaskIntoConstraints="NO" id="pkm-d1-PzZ">
+                                        <rect key="frame" x="20" y="20" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="95E-8l-qDp"/>
+                                            <constraint firstAttribute="height" constant="24" id="VQj-hb-Kwn"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms of user" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efr-8U-MKk">
+                                        <rect key="frame" x="54.000000000000007" y="19" width="119.66666666666669" height="26"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevrone left" translatesAutoresizingMaskIntoConstraints="NO" id="cfW-dY-TgC">
+                                        <rect key="frame" x="346" y="20" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="9CS-Vx-Nyh"/>
+                                            <constraint firstAttribute="width" constant="24" id="c8U-KV-5BD"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.1450980392" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="pkm-d1-PzZ" firstAttribute="leading" secondItem="I31-HM-JN1" secondAttribute="leading" constant="20" id="4Rl-c2-KMW"/>
+                                    <constraint firstItem="efr-8U-MKk" firstAttribute="leading" secondItem="pkm-d1-PzZ" secondAttribute="trailing" constant="10" id="9nH-8J-OIC"/>
+                                    <constraint firstAttribute="trailing" secondItem="cfW-dY-TgC" secondAttribute="trailing" constant="20" id="HEc-j4-eep"/>
+                                    <constraint firstItem="efr-8U-MKk" firstAttribute="centerY" secondItem="I31-HM-JN1" secondAttribute="centerY" id="HVy-dx-8Rs"/>
+                                    <constraint firstAttribute="height" constant="64" id="VbQ-Ju-F66"/>
+                                    <constraint firstItem="cfW-dY-TgC" firstAttribute="centerY" secondItem="I31-HM-JN1" secondAttribute="centerY" id="Y54-GB-0a1"/>
+                                    <constraint firstItem="pkm-d1-PzZ" firstAttribute="centerY" secondItem="I31-HM-JN1" secondAttribute="centerY" id="seX-CQ-Caf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aGh-gQ-Sgc"/>
+                        <color key="backgroundColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cJZ-FJ-ERt" secondAttribute="trailing" constant="20" id="Khf-y1-gw7"/>
+                            <constraint firstItem="mCY-Hq-AtU" firstAttribute="height" secondItem="rCO-sn-WOG" secondAttribute="height" multiplier="0.2" id="Oiw-qN-A2J"/>
+                            <constraint firstItem="I31-HM-JN1" firstAttribute="top" secondItem="cJZ-FJ-ERt" secondAttribute="bottom" constant="20" id="QLh-s6-RHK"/>
+                            <constraint firstAttribute="trailing" secondItem="I31-HM-JN1" secondAttribute="trailing" constant="20" id="SOI-6K-nzG"/>
+                            <constraint firstItem="cJZ-FJ-ERt" firstAttribute="leading" secondItem="rCO-sn-WOG" secondAttribute="leading" constant="20" id="fbK-tT-tLh"/>
+                            <constraint firstAttribute="trailing" secondItem="mCY-Hq-AtU" secondAttribute="trailing" id="gQQ-z4-2VX"/>
+                            <constraint firstItem="cJZ-FJ-ERt" firstAttribute="top" secondItem="mCY-Hq-AtU" secondAttribute="bottom" constant="30" id="oXS-7J-97M"/>
+                            <constraint firstItem="mCY-Hq-AtU" firstAttribute="top" secondItem="rCO-sn-WOG" secondAttribute="top" id="rlQ-WU-9Sx"/>
+                            <constraint firstAttribute="leading" secondItem="I31-HM-JN1" secondAttribute="leading" constant="-20" id="vFH-cK-Qcn"/>
+                            <constraint firstItem="mCY-Hq-AtU" firstAttribute="leading" secondItem="rCO-sn-WOG" secondAttribute="leading" id="yLI-px-gO7"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="ic_settings" id="Kfa-7l-7RY"/>
+                    <connections>
+                        <outlet property="privacyView" destination="cJZ-FJ-ERt" id="alk-bq-J6k"/>
+                        <outlet property="termsView" destination="I31-HM-JN1" id="61Y-5x-C9P"/>
+                        <outlet property="viewTop" destination="mCY-Hq-AtU" id="1YG-zr-emg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xaC-VR-wOI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3631" y="486"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="Qvw-IH-PWo">
+            <objects>
+                <viewController id="m3u-rU-8uy" customClass="NewsViewController" customModule="Immediate_360" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Ct-HZ-VGt">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XiV-lS-82h">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="186.33333333333334"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3iS-nw-2K3">
+                                        <rect key="frame" x="181.66666666666666" y="96.333333333333329" width="67" height="33.999999999999986"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="26"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.1450980392" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="3iS-nw-2K3" firstAttribute="centerX" secondItem="XiV-lS-82h" secondAttribute="centerX" id="0Ca-sJ-4vP"/>
+                                    <constraint firstItem="3iS-nw-2K3" firstAttribute="centerY" secondItem="XiV-lS-82h" secondAttribute="centerY" constant="20" id="7vc-uR-hlc"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VIv-1m-mbJ">
+                                <rect key="frame" x="20" y="206.33333333333331" width="390" height="622.66666666666674"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsCell" rowHeight="104" id="KTf-qV-b9a" customClass="NewsTableViewCell" customModule="Immediate_360" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="104"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KTf-qV-b9a" id="ELb-aS-AR0">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="104"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w83-5p-B5E">
+                                                    <rect key="frame" x="0.0" y="5" width="390" height="94"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bitcoin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJX-GH-SCE">
+                                                            <rect key="frame" x="20" y="70.666666666666671" width="30" height="13"/>
+                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="10"/>
+                                                            <color key="textColor" red="0.46274509800000002" green="0.46274509800000002" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9yV-IV-feu">
+                                                            <rect key="frame" x="20" y="29.333333333333339" width="243" height="15.666666666666668"/>
+                                                            <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="12"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iI0-32-8rR">
+                                                            <rect key="frame" x="273" y="0.0" width="117" height="94"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.13725490200000001" green="0.1450980392" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="iI0-32-8rR" secondAttribute="bottom" id="3qi-sp-xMJ"/>
+                                                        <constraint firstItem="9yV-IV-feu" firstAttribute="leading" secondItem="w83-5p-B5E" secondAttribute="leading" constant="20" id="3se-Sb-Z4Q"/>
+                                                        <constraint firstItem="bJX-GH-SCE" firstAttribute="leading" secondItem="w83-5p-B5E" secondAttribute="leading" constant="20" id="JbX-65-Lb8"/>
+                                                        <constraint firstAttribute="height" constant="84" id="Kli-2L-yIf"/>
+                                                        <constraint firstItem="bJX-GH-SCE" firstAttribute="centerY" secondItem="w83-5p-B5E" secondAttribute="centerY" constant="30" id="RuK-F2-nmh"/>
+                                                        <constraint firstItem="iI0-32-8rR" firstAttribute="top" secondItem="w83-5p-B5E" secondAttribute="top" id="Wlg-h4-ph4"/>
+                                                        <constraint firstItem="9yV-IV-feu" firstAttribute="centerY" secondItem="w83-5p-B5E" secondAttribute="centerY" constant="-10" id="b0b-3l-EQo"/>
+                                                        <constraint firstItem="iI0-32-8rR" firstAttribute="leading" secondItem="9yV-IV-feu" secondAttribute="trailing" constant="10" id="gH8-Nh-cjA"/>
+                                                        <constraint firstItem="iI0-32-8rR" firstAttribute="width" secondItem="w83-5p-B5E" secondAttribute="width" multiplier="0.3" id="hVm-Eg-b0s"/>
+                                                        <constraint firstAttribute="trailing" secondItem="iI0-32-8rR" secondAttribute="trailing" id="rSS-Qq-eog"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="w83-5p-B5E" firstAttribute="top" secondItem="ELb-aS-AR0" secondAttribute="top" constant="5" id="Eod-px-OkD"/>
+                                                <constraint firstItem="w83-5p-B5E" firstAttribute="leading" secondItem="ELb-aS-AR0" secondAttribute="leading" id="GEf-Yt-LEL"/>
+                                                <constraint firstAttribute="trailing" secondItem="w83-5p-B5E" secondAttribute="trailing" id="LCK-Fw-MNh"/>
+                                                <constraint firstAttribute="bottom" secondItem="w83-5p-B5E" secondAttribute="bottom" constant="5" id="qUf-er-hZE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="contentMyView" destination="w83-5p-B5E" id="16D-cQ-R2H"/>
+                                            <outlet property="date" destination="bJX-GH-SCE" id="R0F-ci-dza"/>
+                                            <outlet property="title" destination="9yV-IV-feu" id="OJ4-aF-eJO"/>
+                                            <outlet property="titleImageView" destination="iI0-32-8rR" id="DOG-UA-wnZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="m3u-rU-8uy" id="goS-eD-N79"/>
+                                    <outlet property="delegate" destination="m3u-rU-8uy" id="iBK-ho-0I2"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bFU-j6-dCT"/>
+                        <color key="backgroundColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="XiV-lS-82h" firstAttribute="leading" secondItem="6Ct-HZ-VGt" secondAttribute="leading" id="10e-zH-lLg"/>
+                            <constraint firstItem="bFU-j6-dCT" firstAttribute="bottom" secondItem="VIv-1m-mbJ" secondAttribute="bottom" constant="20" id="KJC-ko-Yeb"/>
+                            <constraint firstItem="bFU-j6-dCT" firstAttribute="trailing" secondItem="VIv-1m-mbJ" secondAttribute="trailing" constant="20" id="NaU-yS-e8G"/>
+                            <constraint firstItem="VIv-1m-mbJ" firstAttribute="leading" secondItem="bFU-j6-dCT" secondAttribute="leading" constant="20" id="Pzc-FT-WSi"/>
+                            <constraint firstItem="XiV-lS-82h" firstAttribute="top" secondItem="6Ct-HZ-VGt" secondAttribute="top" id="Tcz-Hn-xcP"/>
+                            <constraint firstItem="XiV-lS-82h" firstAttribute="trailing" secondItem="6Ct-HZ-VGt" secondAttribute="trailing" id="Y41-Od-q9y"/>
+                            <constraint firstItem="XiV-lS-82h" firstAttribute="height" secondItem="6Ct-HZ-VGt" secondAttribute="height" multiplier="0.2" id="Yye-Bd-UqQ"/>
+                            <constraint firstItem="VIv-1m-mbJ" firstAttribute="top" secondItem="XiV-lS-82h" secondAttribute="bottom" constant="20" id="bAH-t8-RS2"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="News" image="ic_news" id="3SW-7h-qfF"/>
+                    <connections>
+                        <outlet property="tableView" destination="VIv-1m-mbJ" id="MoJ-oI-23o"/>
+                        <outlet property="viewTop" destination="XiV-lS-82h" id="bhL-xg-EuU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a8H-04-aHy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2382" y="485"/>
+        </scene>
+        <!--Privacy View Controller-->
+        <scene sceneID="nuz-Zs-IRw">
+            <objects>
+                <viewController storyboardIdentifier="PrivacyVC" id="5NI-KO-zIJ" customClass="PrivacyViewController" customModule="Immediate_360" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BLe-Co-kgw">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Y7-5q-WIE">
+                                <rect key="frame" x="20" y="79" width="101" height="36"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="9Kb-aN-OMC"/>
+                                    <constraint firstAttribute="width" constant="101" id="zhR-wk-nfg"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevrone right" title="Back" imagePadding="0.0">
+                                    <backgroundConfiguration key="background" cornerRadius="30">
+                                        <color key="backgroundColor" red="0.59215686270000001" green="0.88235294119999996" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goBack:" destination="5NI-KO-zIJ" eventType="touchUpInside" id="7qV-M2-cYm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJ1-IM-2cI">
+                                <rect key="frame" x="20" y="145" width="225" height="39"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhI-t9-Sgm">
+                                <rect key="frame" x="20" y="204" width="390" height="674"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">This Privacy Policy describes how your personal information is collected, used, and shared when you download, install, or use Immediate 360 (the "App").
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Information We Collect">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">When you use the App, we may collect certain information about you, including:
+Device Information: We collect device-specific information, such as your device model, operating system version, unique device identifiers, and mobile network information.
+Usage Information: We collect information about your interactions with the App, such as the features you use, the actions you take, and the duration of your sessions.
+Log Data: We automatically collect log data when you access or use the App, including your IP address, browser type, pages visited, and timestamps.
+Location Information: With your consent, we may collect your precise or approximate location information to provide location-based features and services.</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="How We Use Your Information">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">We use the information collected to:
+Provide and improve the App's functionality, features, and user experience.
+Personalize your experience by delivering tailored content and recommendations.
+Analyze usage trends and patterns to understand how users interact with the App and to optimize performance.
+Communicate with you, respond to inquiries, and provide customer support.
+Enforce our Terms of Use and other policies, and to prevent fraudulent or unauthorized activities.</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Sharing Your Information">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">We may share your information with third parties for the following purposes:
+Service Providers: We may engage trusted third-party service providers to assist us in delivering and improving the App, such as hosting providers, analytics providers, and customer support services.
+Legal Compliance: We may disclose your information to comply with applicable laws, regulations, legal processes, or governmental requests.
+Business Transfers: In the event of a merger, acquisition, or sale of assets, your information may be transferred as part of the transaction.</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Data Retention">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+We retain your personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law.
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Your Choices">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+You can control and manage certain privacy settings within the App, such as location permissions and data sharing preferences. You may also choose to opt out of certain data collection and processing activities, although this may limit your access to certain features and functionalities.
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Security">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Changes to This Policy">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. We will notify you of any material changes by posting the updated policy on this page.
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Last updated: 18.03.2024</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Helvetica-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="20" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="C2g-aM-3Hh"/>
+                        <color key="backgroundColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qhI-t9-Sgm" firstAttribute="leading" secondItem="C2g-aM-3Hh" secondAttribute="leading" constant="20" id="57G-fw-8uJ"/>
+                            <constraint firstItem="HJ1-IM-2cI" firstAttribute="leading" secondItem="C2g-aM-3Hh" secondAttribute="leading" constant="20" id="9zH-Wi-Iyk"/>
+                            <constraint firstItem="qhI-t9-Sgm" firstAttribute="top" secondItem="HJ1-IM-2cI" secondAttribute="bottom" constant="20" id="CnT-AI-7fs"/>
+                            <constraint firstItem="2Y7-5q-WIE" firstAttribute="top" secondItem="C2g-aM-3Hh" secondAttribute="top" constant="20" id="RWU-9P-PDA"/>
+                            <constraint firstItem="2Y7-5q-WIE" firstAttribute="leading" secondItem="C2g-aM-3Hh" secondAttribute="leading" constant="20" id="TYv-0s-yzo"/>
+                            <constraint firstItem="C2g-aM-3Hh" firstAttribute="bottom" secondItem="qhI-t9-Sgm" secondAttribute="bottom" constant="20" id="X2A-8Z-ByH"/>
+                            <constraint firstItem="C2g-aM-3Hh" firstAttribute="trailing" secondItem="qhI-t9-Sgm" secondAttribute="trailing" constant="20" id="f01-JH-mkp"/>
+                            <constraint firstItem="HJ1-IM-2cI" firstAttribute="top" secondItem="2Y7-5q-WIE" secondAttribute="bottom" constant="30" id="oBO-B8-n1m"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jie-on-T5T"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jWn-Ec-Miz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4246" y="1302"/>
+        </scene>
+        <!--Crypto Future View Controller-->
+        <scene sceneID="HwJ-As-e2S">
+            <objects>
+                <viewController id="03x-wZ-VYD" customClass="CryptoFutureViewController" customModule="Immediate_360" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Fh-G8-vOZ">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bfc-6g-qta">
+                                <rect key="frame" x="20" y="20" width="390" height="48"/>
+                                <color key="backgroundColor" red="0.1647058824" green="0.17254901959999999" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Jqt-xa-lhP"/>
+                                </constraints>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet" keyboardAppearance="alert" returnKeyType="search"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="tableView" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="74" estimatedRowHeight="-1" sectionHeaderHeight="1" estimatedSectionHeaderHeight="1" sectionFooterHeight="1" estimatedSectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="YyY-pS-59L">
+                                <rect key="frame" x="20" y="88" width="390" height="814"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CryptoFutureCell" rowHeight="74" id="s20-9a-KXD" customClass="CryptoTableViewCell" customModule="Immediate_360" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="74"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="s20-9a-KXD" id="VEr-Qz-ufG">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="74"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPV-ZX-fff">
+                                                    <rect key="frame" x="0.0" y="5" width="390" height="64"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bitcoin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWg-zT-3jo">
+                                                            <rect key="frame" x="56" y="33" width="42" height="18.333333333333329"/>
+                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                                            <color key="textColor" red="0.46274509800000002" green="0.46274509800000002" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0jM-HD-LPF">
+                                                            <rect key="frame" x="10" y="14" width="36" height="36"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="36" id="4cg-AD-KC9"/>
+                                                                <constraint firstAttribute="height" constant="36" id="Bv8-rx-9Yq"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xem-Aa-Jb8">
+                                                            <rect key="frame" x="56" y="10.333333333333334" width="34" height="23.666666666666664"/>
+                                                            <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.13725490200000001" green="0.1450980392" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="0jM-HD-LPF" firstAttribute="centerY" secondItem="QPV-ZX-fff" secondAttribute="centerY" id="1tO-bz-a4p"/>
+                                                        <constraint firstItem="0jM-HD-LPF" firstAttribute="leading" secondItem="QPV-ZX-fff" secondAttribute="leading" constant="10" id="hHV-vr-eGL"/>
+                                                        <constraint firstItem="RWg-zT-3jo" firstAttribute="leading" secondItem="0jM-HD-LPF" secondAttribute="trailing" constant="10" id="iPC-RE-whB"/>
+                                                        <constraint firstItem="xem-Aa-Jb8" firstAttribute="centerY" secondItem="QPV-ZX-fff" secondAttribute="centerY" constant="-10" id="jLW-uZ-VD8"/>
+                                                        <constraint firstItem="xem-Aa-Jb8" firstAttribute="leading" secondItem="0jM-HD-LPF" secondAttribute="trailing" constant="10" id="uEW-Wb-opI"/>
+                                                        <constraint firstItem="RWg-zT-3jo" firstAttribute="centerY" secondItem="QPV-ZX-fff" secondAttribute="centerY" constant="10" id="zkP-Xp-Zth"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="QPV-ZX-fff" secondAttribute="trailing" id="Erl-Rt-uzf"/>
+                                                <constraint firstItem="QPV-ZX-fff" firstAttribute="top" secondItem="VEr-Qz-ufG" secondAttribute="top" constant="5" id="XAb-VJ-58b"/>
+                                                <constraint firstAttribute="bottom" secondItem="QPV-ZX-fff" secondAttribute="bottom" constant="5" id="k0A-qS-5GY"/>
+                                                <constraint firstItem="QPV-ZX-fff" firstAttribute="leading" secondItem="VEr-Qz-ufG" secondAttribute="leading" id="t7A-aM-boJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="contentMyView" destination="QPV-ZX-fff" id="X9H-uY-vKb"/>
+                                            <outlet property="iconImageView" destination="0jM-HD-LPF" id="rCs-d4-1dR"/>
+                                            <outlet property="nameLabel" destination="RWg-zT-3jo" id="Ohy-pR-QqV"/>
+                                            <outlet property="symbolLabel" destination="xem-Aa-Jb8" id="1vp-gp-Unf"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="03x-wZ-VYD" id="qbd-m7-NH1"/>
+                                    <outlet property="delegate" destination="03x-wZ-VYD" id="tnR-Sn-RLX"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LQo-5x-Xwv"/>
+                        <color key="backgroundColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="LQo-5x-Xwv" firstAttribute="trailing" secondItem="bfc-6g-qta" secondAttribute="trailing" constant="20" id="GPh-jz-OOk"/>
+                            <constraint firstAttribute="bottom" secondItem="YyY-pS-59L" secondAttribute="bottom" constant="20" id="JN0-Fp-TSG"/>
+                            <constraint firstItem="bfc-6g-qta" firstAttribute="leading" secondItem="LQo-5x-Xwv" secondAttribute="leading" constant="20" id="Upx-QF-nul"/>
+                            <constraint firstItem="YyY-pS-59L" firstAttribute="top" secondItem="bfc-6g-qta" secondAttribute="bottom" constant="20" id="b1q-4Y-mVN"/>
+                            <constraint firstItem="LQo-5x-Xwv" firstAttribute="trailing" secondItem="YyY-pS-59L" secondAttribute="trailing" constant="20" id="cjh-Bb-GL2"/>
+                            <constraint firstItem="YyY-pS-59L" firstAttribute="leading" secondItem="LQo-5x-Xwv" secondAttribute="leading" constant="20" id="rS1-iO-9VI"/>
+                            <constraint firstItem="bfc-6g-qta" firstAttribute="top" secondItem="LQo-5x-Xwv" secondAttribute="top" constant="20" id="t5M-q8-qPt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UgX-TA-yFe"/>
+                    <connections>
+                        <outlet property="tableView" destination="YyY-pS-59L" id="tTK-eG-ReM"/>
+                        <outlet property="textFieldSeacrch" destination="bfc-6g-qta" id="JK3-06-Cuv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V6s-hz-zrq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="-721"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevrone left" width="18" height="18"/>
+        <image name="chevrone right" width="24" height="24"/>
+        <image name="ic_calculate" width="18.5" height="18"/>
+        <image name="ic_futures" width="24.5" height="24"/>
+        <image name="ic_news" width="18.5" height="18"/>
+        <image name="ic_privacy" width="18" height="18"/>
+        <image name="ic_settings" width="18.5" height="18"/>
+        <image name="ic_terms" width="18" height="18"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

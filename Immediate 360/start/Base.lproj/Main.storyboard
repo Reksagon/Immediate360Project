@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Immediate_360" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Wez-hz-yyH">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="emR-JT-LlS">
+                                <rect key="frame" x="0.0" y="468.66666666666674" width="393" height="383.33333333333326"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="eWb-JE-oQW">
+                                <rect key="frame" x="121.66666666666669" y="109" width="150" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="WLj-gO-6Hl"/>
+                                    <constraint firstAttribute="height" constant="200" id="Xgf-bN-7ZE"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jr-El-b3E">
+                                <rect key="frame" x="20" y="762" width="353" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="8lx-X8-fGC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start!">
+                                    <backgroundConfiguration key="background" cornerRadius="20">
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mde-ih-qeb"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" editable="NO" textAlignment="center" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0WQ-1u-VeT">
+                                <rect key="frame" x="20" y="568.66666666666663" width="353" height="173.33333333333337"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Welcome to the cryptocurrency calculator! With our application you can calculate the value of your favorite coins in a couple of taps!</string>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Immediate 360!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FiC-gZ-xsh">
+                                <rect key="frame" x="20" y="486.00000000000006" width="353" height="62.666666666666686"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="24"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <wkWebView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kyV-dg-qRz">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eWb-JE-oQW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="39k-ca-dKW"/>
+                            <constraint firstItem="Wez-hz-yyH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3zX-Mc-IBY"/>
+                            <constraint firstAttribute="bottom" secondItem="Wez-hz-yyH" secondAttribute="bottom" id="5Vc-aD-cFv"/>
+                            <constraint firstItem="eWb-JE-oQW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="5ty-aO-MIS"/>
+                            <constraint firstAttribute="bottom" secondItem="emR-JT-LlS" secondAttribute="bottom" id="EP9-YV-M1B"/>
+                            <constraint firstItem="0WQ-1u-VeT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Iff-OZ-S6o"/>
+                            <constraint firstItem="Wez-hz-yyH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LfT-L0-0HD"/>
+                            <constraint firstItem="emR-JT-LlS" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.45" id="ObH-Nj-xLi"/>
+                            <constraint firstItem="0WQ-1u-VeT" firstAttribute="top" secondItem="FiC-gZ-xsh" secondAttribute="bottom" constant="20" id="Qsp-gc-L9w"/>
+                            <constraint firstAttribute="trailing" secondItem="kyV-dg-qRz" secondAttribute="trailing" id="Wyt-8n-1aj"/>
+                            <constraint firstItem="6jr-El-b3E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Zr5-x4-su9"/>
+                            <constraint firstItem="emR-JT-LlS" firstAttribute="top" secondItem="FiC-gZ-xsh" secondAttribute="bottom" constant="-80" id="buw-VF-3Mi"/>
+                            <constraint firstItem="FiC-gZ-xsh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cH3-JI-pZW"/>
+                            <constraint firstItem="kyV-dg-qRz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fW6-Sq-D77"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0WQ-1u-VeT" secondAttribute="trailing" constant="20" id="fte-R8-aen"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="emR-JT-LlS" secondAttribute="trailing" id="l7p-FV-l7e"/>
+                            <constraint firstItem="emR-JT-LlS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="m8j-cT-t3e"/>
+                            <constraint firstItem="kyV-dg-qRz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nFB-zz-Ib8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FiC-gZ-xsh" secondAttribute="trailing" constant="20" id="rPw-s7-AyJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6jr-El-b3E" secondAttribute="bottom" id="vn6-fU-gav"/>
+                            <constraint firstItem="6jr-El-b3E" firstAttribute="top" secondItem="0WQ-1u-VeT" secondAttribute="bottom" constant="20" id="wCc-3r-a1P"/>
+                            <constraint firstAttribute="bottom" secondItem="kyV-dg-qRz" secondAttribute="bottom" id="wtJ-TD-4TK"/>
+                            <constraint firstItem="Wez-hz-yyH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xfb-rz-L5y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6jr-El-b3E" secondAttribute="trailing" constant="20" id="yJZ-QI-r4L"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonStart" destination="6jr-El-b3E" id="uAE-n0-nfc"/>
+                        <outlet property="myView" destination="kyV-dg-qRz" id="YzJ-lx-HBE"/>
+                        <outlet property="viewBottom" destination="emR-JT-LlS" id="idK-rn-vbv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.80000000000001" y="-35.467980295566505"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="520" height="1125.3333740234375"/>
+        <image name="logo" width="108.33333587646484" height="210"/>
+    </resources>
+</document>
